@@ -12,7 +12,7 @@
 header{position:sticky;top:0;z-index:20;background:rgba(12,12,12,.96);border-bottom:1px solid #332a17;backdrop-filter:blur(12px)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:78px}.brand{display:flex;align-items:center;gap:12px;min-width:190px}.brand img{width:58px;height:58px;object-fit:cover;object-position:top;border-radius:5px}.brand strong{font-family:Georgia,serif;color:var(--gold);font-size:19px;line-height:1.05;letter-spacing:.5px}.brand small{display:block;font-size:10px;color:#ddd;letter-spacing:2px;margin-top:5px}
 nav{display:flex;align-items:center;gap:24px;font-size:13px}nav a{color:#eee;transition:.2s}nav a:hover{color:var(--gold)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#17120a;padding:12px 19px;border-radius:999px;font-weight:700;font-size:13px;border:0;cursor:pointer}.menu-toggle{display:none;background:transparent;color:var(--gold);border:1px solid #6d5621;border-radius:8px;padding:8px 11px;font-size:20px}
-.hero{min-height:530px;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(0,0,0,.94) 0%,rgba(0,0,0,.76) 42%,rgba(0,0,0,.22) 100%),url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero{min-height:530px;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(0,0,0,.94) 0%,rgba(0,0,0,.76) 42%,rgba(0,0,0,.22) 100%),url('assets/restaurant-interior.jpg') center/cover}
 .hero:after{content:"";position:absolute;inset:auto 0 0;height:4px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}.hero-content{position:relative;z-index:1;max-width:650px;padding:75px 0}.eyebrow{color:var(--gold);text-transform:uppercase;font-weight:700;letter-spacing:2.4px;font-size:11px}.hero h1{font-family:Georgia,serif;font-size:clamp(42px,6vw,74px);line-height:1.03;margin:18px 0}.hero h1 span{color:var(--gold)}.hero p{color:#e1ddd5;max-width:510px;font-size:17px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.btn-outline{display:inline-flex;align-items:center;justify-content:center;border:1px solid #c9a44a;color:#fff;padding:11px 18px;border-radius:999px;font-size:13px;font-weight:700}
 section{padding:78px 0}.section-light{background:var(--cream);color:#1a1814}.section-heading{max-width:680px;margin-bottom:32px}.section-heading h2{font: bold clamp(30px,4vw,43px)/1.15 Georgia,serif;margin:8px 0 12px}.section-heading p{margin:0;color:#aaa}.section-light .section-heading p{color:#605a50}.gold-line{width:52px;height:3px;background:var(--gold);margin:15px 0}
 .about-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:54px;align-items:center}.photo-frame{position:relative;border:1px solid #6f5722;padding:10px;border-radius:10px}.photo-frame img{height:390px;width:100%;object-fit:cover;border-radius:5px}.about-copy h2{font: bold clamp(30px,4vw,43px)/1.15 Georgia,serif;margin:10px 0 16px}.about-copy p{color:#c7c2b8}.features{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}.feature{border:1px solid #42351b;border-radius:7px;padding:9px 12px;color:var(--gold2);font-size:12px}
@@ -24,6 +24,13 @@ section{padding:78px 0}.section-light{background:var(--cream);color:#1a1814}.sec
 footer{border-top:1px solid #382c16;padding:28px 0;color:#a9a398;font-size:12px}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px}.footer-brand{font: bold 20px Georgia,serif;color:var(--gold)}.footer-links{display:flex;gap:16px;flex-wrap:wrap}
 @media(max-width:850px){nav{gap:13px;font-size:12px}.brand{min-width:auto}.brand strong{font-size:15px}.about-grid{gap:28px}.menu-grid,.blog-grid{grid-template-columns:repeat(2,1fr)}.gallery-grid{grid-template-rows:160px 160px}}
 @media(max-width:650px){.nav{min-height:70px}.brand img{width:48px;height:48px}.menu-toggle{display:block}nav{display:none;position:absolute;top:70px;left:0;right:0;background:#111;padding:18px 5%;border-bottom:1px solid #3d3016;flex-direction:column;align-items:flex-start;gap:17px}nav.open{display:flex}.nav-cta{display:none}.hero{min-height:540px;background-position:58% center}.hero-content{padding:60px 0}.hero p{font-size:15px}section{padding:55px 0}.about-grid,.owner-card,.contact-grid{grid-template-columns:1fr}.photo-frame img{height:280px}.owner-card{padding:17px}.owner-placeholder{height:230px}.menu-grid,.blog-grid{grid-template-columns:1fr}.dish img{height:220px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:170px 130px 130px}.gallery-grid img:first-child{grid-row:span 2}.footer-inner{align-items:flex-start;flex-direction:column}.section-heading{margin-bottom:25px}}
+
+/* Fixed WhatsApp contact button */
+.whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:1000;display:flex;align-items:center;gap:10px;padding:12px 17px 12px 13px;border-radius:999px;background:#25D366;color:#fff;box-shadow:0 8px 24px rgba(0,0,0,.32);font-weight:700;font-size:14px;line-height:1;transition:transform .2s,box-shadow .2s}
+.whatsapp-float:hover{transform:translateY(-2px);box-shadow:0 11px 28px rgba(0,0,0,.38)}
+.whatsapp-float svg{width:27px;height:27px;flex:0 0 27px;fill:currentColor}
+@media(max-width:600px){.whatsapp-float{right:14px;bottom:14px;padding:11px 14px 11px 11px;font-size:13px}.whatsapp-float svg{width:25px;height:25px;flex-basis:25px}}
+
 </style>
 </head>
 <body>
@@ -35,9 +42,9 @@ footer{border-top:1px solid #382c16;padding:28px 0;color:#a9a398;font-size:12px}
   </a>
   <button class="menu-toggle" aria-label="Open menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
   <nav>
-   <a href="#home">Home</a><a href="#about">About Us</a><a href="#owner">Our Owner</a><a href="#menu">Food & Menu</a><a href="#gallery">Gallery</a><a href="#blog">Blog</a><a href="#contact">Contact</a>
+   <a href="#home">Home</a><a href="#about">About Us</a><a href="#owner">Our Owner</a><a href="#menu">Food & Menu</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
   </nav>
-  <a class="nav-cta" href="#contact">Visit Us ↗</a>
+  <a class="nav-cta" href="https://maps.app.goo.gl/MuQ3FcFEZBZUa1hD7" target="_blank" rel="noopener noreferrer">Visit Us ↗</a>
  </div>
 </header>
 <main>
@@ -48,7 +55,7 @@ footer{border-top:1px solid #382c16;padding:28px 0;color:#a9a398;font-size:12px}
  <div class="actions"><a class="btn" href="#menu">Explore Our Menu&nbsp; →</a><a class="btn-outline" href="#about">Our Story</a></div>
 </div></div></section>
 <section id="about"><div class="container about-grid">
- <div class="photo-frame"><img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1000&q=85" alt="Indian vegetarian meal with curries and breads" loading="lazy"></div>
+ <div class="photo-frame"><img src="assets/paneer-tikka.jpg" alt="Streets Of Punjab paneer tikka platter served with green chutney and onion" loading="lazy"></div>
  <div class="about-copy"><div class="eyebrow">About Our Restaurant</div><h2>A Taste of Punjab, Right Here</h2><div class="gold-line"></div>
  <p>Streets Of Punjab™ is all about the bold, comforting flavours of Punjabi food and the joy of sharing a meal. We believe good food brings people together.</p>
  <p>From flavourful curries to freshly prepared favourites, our aim is to serve every guest with care, warmth, and genuine hospitality.</p>
@@ -63,30 +70,30 @@ footer{border-top:1px solid #382c16;padding:28px 0;color:#a9a398;font-size:12px}
 </div></section>
 <section id="menu"><div class="container"><div class="section-heading"><div class="eyebrow">Made with love</div><h2>Our Food & Menu</h2><div class="gold-line"></div><p>A preview of Punjabi vegetarian favourites. Actual dishes and prices can be updated with your restaurant’s menu.</p></div>
  <div class="menu-grid">
-  <article class="dish"><img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=85" alt="Paneer curry" loading="lazy"><div class="dish-body"><div class="tag">Punjabi Favourite</div><h3>Paneer Specialities</h3><p>Rich, flavourful paneer dishes made for a satisfying meal.</p></div></article>
-  <article class="dish"><img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=800&q=85" alt="Indian curry and naan" loading="lazy"><div class="dish-body"><div class="tag">From the Tandoor</div><h3>Tandoori & Chaap</h3><p>Smoky, savoury vegetarian favourites with Punjabi flavour.</p></div></article>
-  <article class="dish"><img src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=800&q=85" alt="Indian breads and meal" loading="lazy"><div class="dish-body"><div class="tag">Comfort Food</div><h3>Paratha, Roti & Rice</h3><p>Classic accompaniments to complete your favourite meal.</p></div></article>
+  <article class="dish"><img src="assets/paneer-tikka.jpg" alt="Streets Of Punjab paneer tikka" loading="lazy"><div class="dish-body"><div class="tag">Punjabi Favourite</div><h3>Paneer Specialities</h3><p>Rich, flavourful paneer dishes made for a satisfying meal.</p></div></article>
+  <article class="dish"><img src="assets/tandoori-chaap-platter.jpg" alt="Streets Of Punjab tandoori and chaap platter" loading="lazy"><div class="dish-body"><div class="tag">From the Tandoor</div><h3>Tandoori & Chaap</h3><p>Smoky, savoury vegetarian favourites with Punjabi flavour.</p></div></article>
+  <article class="dish"><img src="assets/paratha-roti-rice-platter.png" alt="Indian breads and meal" loading="lazy"><div class="dish-body"><div class="tag">Comfort Food</div><h3>Paratha, Roti & Rice</h3><p>Classic accompaniments to complete your favourite meal.</p></div></article>
  </div></div></section>
 <section class="section-light" id="gallery"><div class="container"><div class="section-heading"><div class="eyebrow">A look inside</div><h2>Our Restaurant Gallery</h2><div class="gold-line"></div><p>Restaurant ambience, food, and the moments that make a visit special.</p></div>
  <div class="gallery-grid">
-  <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=85" alt="Restaurant dining area" loading="lazy">
-  <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=85" alt="Restaurant table setting" loading="lazy">
-  <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=85" alt="Restaurant dining experience" loading="lazy">
-  <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=85" alt="Restaurant interior" loading="lazy">
-  <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=85" alt="Restaurant atmosphere" loading="lazy">
- </div></div></section>
-<section id="blog"><div class="container"><div class="section-heading"><div class="eyebrow">Latest from our blog</div><h2>Food Stories, Updates & More</h2><div class="gold-line"></div><p>Stories about Punjabi flavours, restaurant news, and the love behind every plate.</p></div>
- <div class="blog-grid">
-  <article class="blog-card"><img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=800&q=85" alt="Punjabi curry" loading="lazy"><div class="blog-body"><div class="tag">Food Stories</div><h3>The Comfort of Punjabi Flavours</h3><p>Discover the warmth, spice, and traditions that make Punjabi food memorable.</p><a class="read-more" href="#contact">Read More →</a></div></article>
-  <article class="blog-card"><img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=85" alt="Restaurant interior" loading="lazy"><div class="blog-body"><div class="tag">Restaurant Updates</div><h3>A Place to Gather & Enjoy</h3><p>Good meals are even better when shared with family and friends.</p><a class="read-more" href="#contact">Read More →</a></div></article>
-  
+  <img src="assets/gallery-dining-1.jpg" alt="Streets Of Punjab dining area with window-side seating" loading="lazy">
+  <img src="assets/gallery-punjabi-wall.jpg" alt="Streets Of Punjab dining area with Punjabi wall mural" loading="lazy">
+  <img src="assets/gallery-dining-2.jpg" alt="Streets Of Punjab restaurant seating and tables" loading="lazy">
+  <img src="assets/gallery-stairs.jpg" alt="Streets Of Punjab upstairs dining area" loading="lazy">
+  <img src="assets/gallery-exterior.jpg" alt="Streets Of Punjab restaurant exterior at night" loading="lazy">
  </div></div></section>
 <section id="contact"><div class="container"><div class="section-heading"><div class="eyebrow">Come say hello</div><h2>Visit Streets Of Punjab™</h2><div class="gold-line"></div><p>Visit us in Sindhi Colony, Secunderabad. We are open every day and look forward to welcoming you.</p></div>
- <div class="contact-grid"><div class="contact-box"><h3>Contact & Location</h3><div class="contact-row"><strong>Restaurant Address</strong><span>1-8-215/29, PG Road, Sindhi Colony, Beside SBI Bank, Secunderabad,500003</span></div><div class="contact-row"><strong>Call Us</strong><span><a href="tel:9885500013">9885500013</a> · <a href="tel:9885500012">9885500012</a></span></div><div class="contact-row"><strong>Opening Hours</strong><span>Monday to Sunday · 12:00 PM – 11:30 PM<br></span></div></div>
+ <div class="contact-grid"><div class="contact-box"><h3>Contact & Location</h3><div class="contact-row"><strong>Restaurant Address</strong><span>1-8-215/29, PG Road, Sindhi Colony, Beside SBI Bank, Secunderabad</span></div><div class="contact-row"><strong>Call Us</strong><span><a href="tel:9885500013">9885500013</a> · <a href="tel:9885500012">9885500012</a></span></div><div class="contact-row"><strong>Opening Hours</strong><span>Monday to Sunday · 12:00 PM – 11:30 PM<br>No weekly off</span></div></div>
  <div class="contact-box"><h3>We’d Love to See You</h3><p>Find us at Sindhi Colony, beside SBI Bank on PG Road, Secunderabad. Call us on 9885500013 or 9885500012 for enquiries.</p><a class="btn" href="#home">Back to Top ↑</a></div></div>
 </div></section>
 </main>
-<footer><div class="container footer-inner"><div><div class="footer-brand">STREETS OF PUNJAB™</div><div>Authentic Punjabi Vegetarian Food · Great Taste · Great Hospitality</div></div><div class="footer-links"><a href="#about">About</a><a href="#menu">Menu</a><a href="#blog">Blog</a><a href="#contact">Contact</a></div><div>© <span id="year"></span> Streets Of Punjab™</div></div></footer>
+<footer><div class="container footer-inner"><div><div class="footer-brand">STREETS OF PUNJAB™</div><div>Authentic Punjabi Vegetarian Food · Great Taste · Great Hospitality</div></div><div class="footer-links"><a href="#about">About</a><a href="#menu">Menu</a><a href="#contact">Contact</a></div><div>© <span id="year"></span> Streets Of Punjab™</div></div></footer>
 <script>document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('open')));</script>
+
+<a class="whatsapp-float" href="https://wa.me/919885500013" target="_blank" rel="noopener noreferrer" aria-label="Chat with Streets Of Punjab on WhatsApp" title="Chat with us on WhatsApp">
+ <svg viewBox="0 0 32 32" role="img" aria-hidden="true"><path d="M16.02 3.2A12.66 12.66 0 0 0 5.15 22.36L3.4 28.8l6.6-1.73A12.67 12.67 0 1 0 16.02 3.2Zm0 22.98c-1.96 0-3.88-.53-5.55-1.54l-.4-.24-3.92 1.03 1.05-3.82-.26-.42a10.28 10.28 0 1 1 9.08 4.99Zm5.64-7.7c-.31-.16-1.84-.91-2.13-1.02-.29-.1-.5-.16-.71.16-.21.31-.81 1.02-.99 1.23-.18.21-.36.24-.67.08-.31-.16-1.31-.48-2.49-1.53-.92-.82-1.54-1.83-1.72-2.14-.18-.31-.02-.48.14-.64.14-.14.31-.36.47-.54.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.7-.97-2.33-.25-.61-.51-.52-.71-.53h-.61c-.21 0-.55.08-.84.39-.29.31-1.1 1.07-1.1 2.61s1.13 3.03 1.29 3.24c.16.21 2.22 3.39 5.37 4.75.75.32 1.34.51 1.8.65.76.24 1.45.21 1.99.13.61-.09 1.84-.75 2.1-1.49.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.37Z"/></svg>
+ <span>Chat on WhatsApp</span>
+</a>
+
 </body>
 </html>
